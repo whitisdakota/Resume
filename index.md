@@ -1,5 +1,5 @@
 # Dakota Whitis
-| Lexington, KY | 859-536-3866 | dakota@whitis.me | LinkedIn: whitis.me/linkedin |
+dakota@whitis.me | Lexington, KY | LinkedIn: [whitis.me/linkedin][http://whitis.me/linkedin]
 
 ## Professional Summary
 Detail-oriented Data Analyst with experience in insurance and sales operations, skilled in SQL, Power BI, and KPI reporting. Designed databases, automated reporting pipelines, and built visual dashboards to guide business strategy. Strong background in CRM management, customer analytics, and performance optimization.
@@ -37,5 +37,5 @@ Microsoft Certified: Data Analyst Associate (PL-300)
 - Built outreach strategies that expanded the client base significantly.
 
 ## Education
-Bluegrass Community and Technical College | Lexington, KY
+### Bluegrass Community and Technical College | Lexington, KY
 Associate’s Degree in Programming | Expected May 2026 | GPA: 4.0
