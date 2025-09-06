@@ -21,13 +21,16 @@ Microsoft Certified: Data Analyst Associate (PL-300)
 - Created KPI dashboards in Preset.io to track sales, client retention, and trends.
 - Automated CRM campaigns for outreach, follow-ups, and customer service tasks.
 - Achieved top production with 99 insurance policies sold in a single month.
+
 ### Senior Inside Sales Consultant | Angi | Oct 2022 – Jul 2023
 - Consulted with small businesses on advertising solutions, leveraging ROI data to drive adoption.
 - Managed B2B client accounts with a focus on analytics and campaign optimization.
 - Delivered consistent results in a high-volume outbound sales environment.
+
 ### Life & Health Insurance Agent | Final Expense Services | Jun 2021 – Oct 2022
 - Sold insurance products using consultative selling and client data insights.
 - Improved outreach effectiveness through customer data analysis.
+
 ### Sales Team Leader / Consultant | MaveriConsulting, LLC | Nov 2018 – Jun 2021
 - Led a D2D sales team, monitoring performance metrics and providing coaching.
 - Managed digital marketing campaigns, including Facebook advertising, to generate leads.
