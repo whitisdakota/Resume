@@ -1,5 +1,5 @@
 # Dakota Whitis
-dakota@whitis.me | Lexington, KY | LinkedIn: [whitis.me/linkedin][http://whitis.me/linkedin]
+dakota@whitis.me | Lexington, KY | LinkedIn: [whitis.me/linkedin](http://whitis.me/linkedin)
 
 ## Professional Summary
 Detail-oriented Data Analyst with experience in insurance and sales operations, skilled in SQL, Power BI, and KPI reporting. Designed databases, automated reporting pipelines, and built visual dashboards to guide business strategy. Strong background in CRM management, customer analytics, and performance optimization.
