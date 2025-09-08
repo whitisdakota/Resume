@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dakota Whitis · Data Analytics Portfolio · AI R&D Case Study</title>
+  <meta name="description"
+    content="Case study exploring AI R&D spend, revenue, and stock impact with event annotations." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0d10;
+      --card: #12151a;
+      --ink: #e9eef5;
+      --muted: #b8c2cf;
+      --brand: #69b7ff;
+      --accent: #8ee3a1;
+      --ring: rgba(105, 183, 255, .5)
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html,
+    body {
+      margin: 0;
+      height: 100%
+    }
+
+    body {
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: linear-gradient(180deg, #0b0d10, #0b0d10 40%, #0f141a 100%);
+      color: var(--ink)
+    }
+
+    a {
+      color: var(--brand);
+      text-decoration: none
+    }
+
+    a:hover {
+      text-decoration: underline
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 32px 20px
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 18px 0
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px
+    }
+
+    .avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--brand), var(--accent));
+      box-shadow: 0 0 0 4px #0b0d10
+    }
+
+    .title {
+      font-weight: 800;
+      letter-spacing: .2px
+    }
+
+    nav {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 14px;
+      border-radius: 12px;
+      background: #0f1318;
+      border: 1px solid #1b212a
+    }
+
+    .btn:hover {
+      border-color: #2a3645
+    }
+
+    .btn.primary {
+      background: linear-gradient(180deg, #18202a, #151b24);
+      border: 1px solid #263140
+    }
+
+    .hero {
+      padding: 10px 0 8px
+    }
+
+    h1 {
+      font-size: clamp(28px, 3.8vw, 44px);
+      line-height: 1.1;
+      margin: 0 0 10px
+    }
+
+    .lead {
+      color: var(--muted);
+      max-width: 70ch
+    }
+
+    section {
+      margin: 36px 0
+    }
+
+    h2 {
+      font-size: clamp(22px, 2.6vw, 28px);
+      margin: 0 0 14px
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 18px
+    }
+
+    .card {
+      grid-column: span 12;
+      background: var(--card);
+      border: 1px solid #1a2029;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, .25)
+    }
+
+    @media(min-width:860px) {
+      .card {
+        grid-column: span 6
+      }
+    }
+
+    .card header {
+      padding: 18px 18px 0
+    }
+
+    .thumb {
+      aspect-ratio: 16/9;
+      background: #0e1217 url('') center/cover no-repeat;
+      border-bottom: 1px solid #1a2029
+    }
+
+    .pad {
+      padding: 18px
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 8px 0 0
+    }
+
+    .meta .pill {
+      font-size: 12px;
+      color: #bcd0e2;
+      background: #0f1620;
+      border: 1px solid #1d2734;
+      padding: 6px 10px;
+      border-radius: 999px
+    }
+
+    .case {
+      line-height: 1.6;
+      color: var(--muted)
+    }
+
+    .actions {
+      display: flex;
+      gap: 10px;
+      margin-top: 14px;
+      flex-wrap: wrap
+    }
+
+    .note {
+      border-left: 3px solid var(--brand);
+      padding: 10px 12px;
+      background: #0f141a;
+      color: #cfe2ff;
+      border-radius: 8px
+    }
+
+    .footer {
+      padding: 32px 0;
+      color: #a9b6c6
+    }
+
+    .footer small {
+      opacity: .8
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar" aria-hidden="true"></div>
+        <div>
+          <div class="title">Dakota Whitis</div>
+          <div style="color:var(--muted);font-size:14px">Data Analyst · Power BI · SQL · Tableau</div>
+        </div>
+      </div>
+      <nav aria-label="primary">
+        <a class="btn" href="/">Home</a>
+        <a class="btn" href="mailto:dakota@whitis.me">Contact</a>
+      </nav>
+    </header>
+
+    <section id="proj2-details" aria-label="AI R&D Spending and Stock Impact Case Study">
+      <h2>Case Study · AI R&amp;D Spending &amp; Stock Impact (Tableau)</h2>
+
+      <div class="note" role="note">
+        <strong>Data privacy:</strong> Uses synthetic/market-style financial data to demonstrate methods without
+        exposing confidential information.
+      </div>
+
+      <article class="pad case" style="margin-top:14px">
+
+        <h2>Overview</h2>
+        <p>
+          This dashboard examines relationships between company R&amp;D spending, AI revenue, and stock performance over
+          time, with annotations for notable AI events. The objective was to connect investment patterns to efficiency
+          and market reaction in a single, readable view.
+        </p>
+
+        <h2>Key Questions</h2>
+        <ul>
+          <li>How have R&amp;D expenditures evolved by company?</li>
+          <li>Are companies becoming more efficient (spending relative to revenue)?</li>
+          <li>When do AI revenues approach or surpass R&amp;D spend?</li>
+          <li>Which product/feature releases align with the largest stock moves?</li>
+          <li>How do companies differ in index changes through time?</li>
+        </ul>
+
+        <h2>Data &amp; Tools</h2>
+        <ul>
+          <li>Source: Synthetic financial &amp; event dataset (company-level R&amp;D, AI revenue, stock index, event
+            log)</li>
+          <li>Tool: <strong>Tableau</strong></li>
+          <li>Process: Data integration, calculated fields for ratios, dual‑axis line charts, and event annotations</li>
+        </ul>
+
+        <h2>Findings</h2>
+        <ul>
+          <li><strong>R&amp;D growth:</strong> Spend rises steadily across all three companies, with Google &amp; Meta
+            growing fastest (top‑left chart).</li>
+          <li><strong>Efficiency trend:</strong> Spending/Revenue ratios decline for all companies over the period,
+            indicating improving efficiency; one firm remains structurally higher‑cost (top‑middle).</li>
+          <li><strong>Revenue vs. spend:</strong> AI revenue lines trend upward and approach/overtake R&amp;D spend for
+            Google &amp; Meta around 2022–2023 (top‑right).</li>
+          <li><strong>Event impacts:</strong> Releases such as AI‑powered search and image‑generation models align with
+            the strongest positive stock impacts (bottom‑left bar summary).</li>
+          <li><strong>Index changes:</strong> Company index lines show distinct volatility profiles; spikes coincide
+            with the noted product events (bottom‑right line chart).</li>
+        </ul>
+
+        <h2>Business Impact</h2>
+        <ul>
+          <li><strong>Investor lens:</strong> Clarifies how sustained R&amp;D can transition toward profitability in AI
+            lines of business.</li>
+          <li><strong>Strategy:</strong> Identifies phases where incremental R&amp;D produces outsized revenue growth
+            and market response.</li>
+          <li><strong>Communication:</strong> Event annotations help explain <em>why</em> certain quarters outperformed,
+            improving stakeholder narratives.</li>
+        </ul>
+
+        <h2>Limitations</h2>
+        <ul>
+          <li>Illustrative, synthetic data; results show technique, not investment advice.</li>
+          <li>Macroeconomic variables (rates, liquidity, risk appetite) not modeled.</li>
+        </ul>
+
+        <h2>Next Steps</h2>
+        <ul>
+          <li>Extend with predictive models estimating expected stock impact for scheduled releases.</li>
+          <li>Add competitor &amp; sector benchmarks to contextualize efficiency and returns.</li>
+          <li>Drill down by product line/region; add tooltips linking to event sources.</li>
+        </ul>
+
+        <h2>Artifact</h2>
+        <div class='tableauPlaceholder' id='viz1757370510108' style='position: relative'><noscript><a href='#'><img
+                alt='AI Financial Data Dashboard '
+                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;AI&#47;AIInvestmentMarketImpactRDRevenueandStockReactions20152024SyntheicData&#47;AIFinancialDataDashboard&#47;1_rss.png'
+                style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name'
+              value='AIInvestmentMarketImpactRDRevenueandStockReactions20152024SyntheicData&#47;AIFinancialDataDashboard' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image'
+              value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;AI&#47;AIInvestmentMarketImpactRDRevenueandStockReactions20152024SyntheicData&#47;AIFinancialDataDashboard&#47;1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+          </object></div>
+        <script
+          type='text/javascript'>                    var divElement = document.getElementById('viz1757370510108'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) {vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';} else if (divElement.offsetWidth > 500) {vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';} else {vizElement.style.width = '100%'; vizElement.style.height = '1877px';} var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+      </article>
+    </section>
+
+    <footer class="footer">
+      <small>© <span id="y"></span> Dakota Whitis. Built with plain HTML/CSS. No frameworks.</small>
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+
+</html>

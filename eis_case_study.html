@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dakota Whitis · Data Analytics Portfolio · Case Study</title>
+  <meta name="description"
+    content="Case study for exploring an insurance agency's client demographics and sales patterns." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0d10;
+      --card: #12151a;
+      --ink: #e9eef5;
+      --muted: #b8c2cf;
+      --brand: #69b7ff;
+      --accent: #8ee3a1;
+      --ring: rgba(105, 183, 255, .5);
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html,
+    body {
+      margin: 0;
+      height: 100%;
+    }
+
+    body {
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: linear-gradient(180deg, #0b0d10, #0b0d10 40%, #0f141a 100%);
+      color: var(--ink);
+    }
+
+    a {
+      color: var(--brand);
+      text-decoration: none
+    }
+
+    a:hover {
+      text-decoration: underline
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 32px 20px
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 18px 0
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px
+    }
+
+    .avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--brand), var(--accent));
+      box-shadow: 0 0 0 4px #0b0d10
+    }
+
+    .title {
+      font-weight: 800;
+      letter-spacing: .2px
+    }
+
+    nav {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 14px;
+      border-radius: 12px;
+      background: #0f1318;
+      border: 1px solid #1b212a
+    }
+
+    .btn:hover {
+      border-color: #2a3645
+    }
+
+    .btn.primary {
+      background: linear-gradient(180deg, #18202a, #151b24);
+      border: 1px solid #263140;
+    }
+
+    .hero {
+      padding: 36px 0 8px
+    }
+
+    h1 {
+      font-size: clamp(28px, 3.8vw, 44px);
+      line-height: 1.1;
+      margin: 0 0 10px
+    }
+
+    .lead {
+      color: var(--muted);
+      max-width: 70ch
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 16px 0 0
+    }
+
+    .chip {
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: #121924;
+      border: 1px solid #1e2a36;
+      color: #cfe2ff;
+      font-size: 13px
+    }
+
+    section {
+      margin: 36px 0
+    }
+
+    h2 {
+      font-size: clamp(22px, 2.6vw, 28px);
+      margin: 0 0 14px
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 18px
+    }
+
+    .card {
+      grid-column: span 12;
+      background: var(--card);
+      border: 1px solid #1a2029;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, .25)
+    }
+
+    @media(min-width:860px) {
+      .card {
+        grid-column: span 6
+      }
+    }
+
+    .card header {
+      padding: 18px 18px 0
+    }
+
+    .thumb {
+      aspect-ratio: 16/9;
+      background: #0e1217 url('') center/cover no-repeat;
+      border-bottom: 1px solid #1a2029
+    }
+
+    .pad {
+      padding: 18px
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 8px 0 0
+    }
+
+    .meta .pill {
+      font-size: 12px;
+      color: #bcd0e2;
+      background: #0f1620;
+      border: 1px solid #1d2734;
+      padding: 6px 10px;
+      border-radius: 999px
+    }
+
+    .case {
+      line-height: 1.6;
+      color: var(--muted)
+    }
+
+    .actions {
+      display: flex;
+      gap: 10px;
+      margin-top: 14px;
+      flex-wrap: wrap
+    }
+
+    .footer {
+      padding: 32px 0;
+      color: #a9b6c6
+    }
+
+    .footer small {
+      opacity: .8
+    }
+
+    .note {
+      border-left: 3px solid var(--brand);
+      padding: 10px 12px;
+      background: #0f141a;
+      color: #cfe2ff;
+      border-radius: 8px
+    }
+
+    .sr-only {
+      position: absolute;
+      left: -9999px
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar" aria-hidden="true"></div>
+        <div>
+          <div class="title">Dakota Whitis</div>
+          <div style="color:var(--muted);font-size:14px">Data Analyst · Power BI · SQL · Tableau</div>
+        </div>
+      </div>
+      <nav aria-label="primary">
+        <a class="btn" href="/">Home</a>
+        <a class="btn" href="mailto:dakota@whitis.me">Contact</a>
+      </nav>
+    </header>
+    <!-- CASE STUDY DETAIL (expandable anchor section) -->
+    <section id="proj1-details" aria-label="Medicare Client Demographics Case Study">
+      <h2>Case Study · Medicare Client Demographics (Power BI)</h2>
+
+      <div class="note" role="note">
+        <strong>Data privacy:</strong> Client identities are anonymized. For public hosting, replace visuals with
+        screenshots from a synthetic/public dataset that mirrors the structure.
+      </div>
+
+      <article class="pad case" style="margin-top:14px">
+
+        <h2>Overview</h2>
+        <div class="actions" style="margin:12px 0 0">
+          <a class="btn" href="./assets/eis_dashboard.pdf" target="_blank" rel="noopener">View PDF
+            Export</a>
+        </div>
+        <p>
+          This dashboard was created in Power BI to give leadership visibility into our Medicare client base.
+          The goal was to uncover demographic patterns, enrollment sources, and carrier performance to guide
+          marketing and operational decisions.
+        </p>
+
+        <h2>Key Questions</h2>
+        <ul>
+          <li>Where are clients concentrated geographically?</li>
+          <li>What are the age, gender, and Medicaid coverage profiles of the book of business?</li>
+          <li>Which carriers dominate enrollments?</li>
+          <li>What channels (phone vs. in-office) are used most?</li>
+          <li>How do election periods and SEP reasons contribute to enrollments?</li>
+          <li>What are the month-to-month application patterns?</li>
+        </ul>
+
+        <h2>Data &amp; Tools</h2>
+        <ul>
+          <li>Source: Internal CRM client records (anonymized for portfolio)</li>
+          <li>Tool: <strong>Power BI Desktop</strong></li>
+          <li>Process: Data cleaning, aggregation, model building, and interactive visualization</li>
+        </ul>
+
+        <h2>Findings · Page 1 (Demographics)</h2>
+        <ul>
+          <li><strong>State distribution:</strong> Highest counts in Indiana (30), Florida (29), Texas (18), Kentucky
+            (14). Total clients: 239.</li>
+          <li><strong>Age distribution:</strong> Clients span 50–100+, concentrated between 60–80.</li>
+          <li><strong>Gender:</strong> ~67% male, ~33% female.</li>
+          <li><strong>Medicaid status:</strong> 69 true vs. 170 false.</li>
+        </ul>
+
+        <h2>Findings · Page 2 (Carriers, Channels, Election Periods, Month Trend)</h2>
+        <ul>
+          <li><strong>Carrier mix:</strong> Humana, UHC, Devoted, Aetna, Anthem, Cigna, and WellCare are all
+            represented.</li>
+          <li><strong>Sales channel:</strong> Phone ≈ 94.5% vs. In-office ≈ 5.5%.</li>
+          <li><strong>New to MA:</strong> Mix of new vs. returning enrollees.</li>
+          <li><strong>Election periods:</strong> Applications span AEP, OEP, SEP, IEP, ICEP, IEP2, and MCD.</li>
+          <li><strong>SEP “Used by” reasons:</strong> Categories include MDE, CDC, LEC, CSN, DST, 5ST, MCD, MRD, OCC.
+          </li>
+          <li><strong>Month trend:</strong> Applications by month (2024–2025) with carrier breakdown.</li>
+        </ul>
+
+        <h2>Business Impact</h2>
+        <ul>
+          <li><strong>Targeting:</strong> Geographic concentration guided where seminars and mailers should be focused.
+          </li>
+          <li><strong>Operations:</strong> The 95% phone-based sales mix justified prioritizing call-center resources
+            and training.</li>
+          <li><strong>Compliance &amp; product strategy:</strong> Carrier and election-period data informed licensing
+            and compliant outreach timing.</li>
+          <li><strong>Planning:</strong> Month-level application patterns supported pacing of marketing and staffing,
+            especially around AEP and OEP.</li>
+        </ul>
+
+        <h2>Limitations</h2>
+        <ul>
+          <li>Based on a snapshot of 239 clients; patterns may shift with larger samples.</li>
+          <li>Data anonymized for privacy, so only aggregated results are shown here.</li>
+        </ul>
+
+        <h2>Next Steps</h2>
+        <ul>
+          <li>Add ROI metrics linking marketing spend to enrollments.</li>
+          <li>Enable drill-through to client segments (age + state + carrier).</li>
+          <li>Incorporate year-over-year trend lines for clearer season comparisons.</li>
+        </ul>
+
+        <h2>Screens & Artifacts</h2>
+        <div class="grid" style="margin-top:10px">
+          <figure class="card" style="grid-column:span 12">
+            <div class="thumb" style="background-image:url('images/eis_page_1.png')"
+              aria-label="State distribution visualization"></div>
+            <figcaption class="pad" style="color:var(--muted)">Demographic information
+            </figcaption>
+          </figure>
+          <figure class="card" style="grid-column:span 12">
+            <div class="thumb" style="background-image:url('images/eis_page_2.png')"
+              aria-label="Age and gender visuals">
+            </div>
+            <figcaption class="pad" style="color:var(--muted)">Age & gender breakdown
+            </figcaption>
+          </figure>
+        </div>
+      </article>
+    </section>
+    <footer class="footer">
+      <small>© <span id="y"></span> Dakota Whitis. Built with plain HTML/CSS. No frameworks.</small>
+    </footer>
+  </div>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+
+</html>

@@ -238,7 +238,7 @@
         <div class="avatar" aria-hidden="true"></div>
         <div>
           <div class="title">Dakota Whitis</div>
-          <div style="color:var(--muted);font-size:14px">Data Analyst · Power BI · SQL</div>
+          <div style="color:var(--muted);font-size:14px">Data Analyst · Power BI · SQL · Tableau</div>
         </div>
       </div>
       <nav aria-label="primary">
@@ -248,10 +248,24 @@
       </nav>
     </header>
 
+    <section id="about">
+      <h1>About</h1>
+      <p class="case">
+        I’m a data analyst focused on practical business impact for sales & insurance operations. I enjoy shaping raw
+        data into KPI dashboards, automating repeat reporting, and translating insights for non‑technical stakeholders.
+      </p>
+      <div class="actions">
+        <a class="btn" href="sandbox:/mnt/data/Dakota_Whitis_Data_Analyst_Resume.pdf" target="_blank"
+          rel="noopener">Download Resume (PDF)</a>
+        <a class="btn" href="mailto:dakota@whitis.me">Email Me</a>
+        <a class="btn" href="http://whitis.me/linkedin" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+
     <section class="hero" id="top">
       <h1>Turning messy business data into clear decisions</h1>
-      <p class="lead">I build practical dashboards and reporting pipelines that help sales & insurance teams see what
-        matters — faster. Below are a few representative projects; each includes a short case study and links to
+      <p class="case">I build practical dashboards and reporting pipelines that help sales & insurance teams see what
+        matters, faster. Below are a few representative projects; each includes a short case study and links to
         artifacts.</p>
       <div class="chips" aria-label="skills">
         <span class="chip">Power BI</span>
@@ -259,18 +273,20 @@
         <span class="chip">Excel / Power Query</span>
         <span class="chip">KPI Dashboards</span>
         <span class="chip">Marketing & CRM Analytics</span>
+        <span class="chip">Tableau</span>
       </div>
     </section>
 
     <section id="projects" aria-label="Projects">
-      <h2>Featured Projects</h2>
+      <h1>Featured Projects</h1>
       <div class="grid">
         <!-- PROJECT 1: Medicare Client Demographics (Power BI) -->
         <article class="card" aria-labelledby="proj1-title">
           <div class="thumb" style="background-image:url('images/eis_dashboard.png')" role="img"
             aria-label="Power BI dashboard thumbnails"></div>
           <header>
-            <h3 id="proj1-title" style="margin:0">Medicare Client Demographics Dashboard</h3>
+            <h2 id="proj1-title" style="margin:0"><a href="eis_case_study.html">Medicare Client Demographics
+                Dashboard</a></h2>
             <div class="meta">
               <span class="pill">Power BI</span>
               <span class="pill">Data Cleaning</span>
@@ -286,95 +302,62 @@
               vs. in‑office).
             </p>
             <ul class="case">
-              <li>Geography: state-by-state distribution with top states highlighted.</li>
-              <li>Demographics: age histogram; gender share; Medicaid segmentation.</li>
+              <li><b>Geography:</b> state-by-state distribution with top states highlighted.</li>
+              <li><b>Demographics:</b> age histogram; gender share; Medicaid segmentation.</li>
               <li>Business: carrier mix; application timing by month/year and election period.</li>
             </ul>
-            <div class="actions">
-              <!-- Replace the sandbox link with your public URL when deployed -->
-              <a class="btn" href="assets/eis_dashboard.pdf" target="_blank" rel="noopener">View PDF
-                Export</a>
-              <!-- If you publish a safe/public version, link it below -->
-              <a class="btn" href="#" aria-disabled="true" title="Publish-to-Web link goes here">Live (coming soon)</a>
-              <a class="btn" href="#proj1-details">Case Study</a>
-            </div>
           </div>
         </article>
 
         <!-- TEMPLATE: Duplicate this card per project -->
+        <!-- <article class="card" aria-labelledby="projX-title"> -->
+        <!--   <div class="thumb" style="background-image:url('images/project_placeholder.jpg')" role="img" -->
+        <!--     aria-label="Project thumbnail"></div> -->
+        <!--   <header> -->
+        <!--     <h2 id="projX-title" style="margin:0">Project Title Here</h2> -->
+        <!--     <div class="meta"> -->
+        <!--       <span class="pill">Tool/Tech</span> -->
+        <!--       <span class="pill">Skill</span> -->
+        <!--     </div> -->
+        <!--   </header> -->
+        <!--   <div class="pad"> -->
+        <!--     <p class="case">One‑sentence problem statement. Brief description of what you built and why it mattered. -->
+        <!--       Keep it to 2–3 sentences, then link to artifacts.</p> -->
+        <!--     <div class="actions"> -->
+        <!--       <a class="btn" href="#" target="_blank" rel="noopener">Live</a> -->
+        <!--       <a class="btn" href="#" target="_blank" rel="noopener">Repo / Files</a> -->
+        <!--       <a class="btn" href="#" target="_blank" rel="noopener">PDF / Screens</a> -->
+        <!--     </div> -->
+        <!--   </div> -->
+        <!-- </article> -->
+
         <article class="card" aria-labelledby="projX-title">
-          <div class="thumb" style="background-image:url('images/project_placeholder.jpg')" role="img"
+          <div class="thumb" style="background-image:url('images/ai_dashboard.png')" role="img"
             aria-label="Project thumbnail"></div>
           <header>
-            <h3 id="projX-title" style="margin:0">Project Title Here</h3>
+            <h2 id="projX-title" style="margin:0"><a href="ai_case_study.html">AI R&amp;D Spending &amp; Impact</a></h2>
             <div class="meta">
-              <span class="pill">Tool/Tech</span>
-              <span class="pill">Skill</span>
+              <span class="pill">Tableau</span>
+              <span class="pill">Visualization</span>
+              <span class="pill">Visualization</span>
             </div>
           </header>
           <div class="pad">
-            <p class="case">One‑sentence problem statement. Brief description of what you built and why it mattered.
-              Keep it to 2–3 sentences, then link to artifacts.</p>
-            <div class="actions">
-              <a class="btn" href="#" target="_blank" rel="noopener">Live</a>
-              <a class="btn" href="#" target="_blank" rel="noopener">Repo / Files</a>
-              <a class="btn" href="#" target="_blank" rel="noopener">PDF / Screens</a>
-            </div>
+            <p class="case">Analyzed synthetic financial data to link AI R&D spending, revenue growth, and stock
+              performance. Built
+              a Tableau dashboard with trend lines, efficiency ratios, and event annotations to show how product
+              launches and
+              investment patterns align with market impacts.</p>
+            <ul class="case">
+              <li><b>R&amp;D &amp; Revenue</b>: Trend lines comparing AI research spending to revenue growth.</li>
+              <li><b>Market impact</b>: Stock performance over time with event markets for product launches.</li>
+              <li><b>Efficiency Ratios</b>: Visualization of revenue generated per dollar of R&amp;D investment.</li>
+            </ul>
           </div>
         </article>
       </div>
     </section>
 
-    <!-- CASE STUDY DETAIL (expandable anchor section) -->
-    <section id="proj1-details" aria-label="Medicare Client Demographics Case Study">
-      <h2>Case Study · Medicare Client Demographics</h2>
-      <div class="note" role="note">
-        <strong>Note on data privacy:</strong> Client identities are anonymized. For public hosting, replace screenshots
-        with a synthetic or public dataset version.
-      </div>
-      <p class="case" style="margin-top:12px">
-        <strong>Goal.</strong> Give leadership a reliable view of who our clients are and how/when they enroll to steer
-        marketing (mailers, seminars) and staffing.
-      </p>
-      <p class="case">
-        <strong>Approach.</strong> Cleaned and modeled CRM extracts in Power BI; built visuals for state distribution,
-        demographics (age, gender, Medicaid), carrier share, application timing by month/year, election periods
-        (AEP/OEP/SEP), and sales channel (phone vs. in‑office).
-      </p>
-      <p class="case">
-        <strong>Highlights.</strong> Concentration in specific states influenced seminar locations; heavy phone
-        enrollments shaped staffing; carrier mix informed product focus; seasonality/election-period trends guided
-        campaign timing.
-      </p>
-      <div class="grid" style="margin-top:10px">
-        <figure class="card" style="grid-column:span 12">
-          <div class="thumb" style="background-image:url('images/medicare_states.jpg')"
-            aria-label="State distribution visualization"></div>
-          <figcaption class="pad" style="color:var(--muted)">State distribution overview (replace with your screenshot)
-          </figcaption>
-        </figure>
-        <figure class="card" style="grid-column:span 12">
-          <div class="thumb" style="background-image:url('images/medicare_age_gender.jpg')"
-            aria-label="Age and gender visuals"></div>
-          <figcaption class="pad" style="color:var(--muted)">Age & gender breakdown (replace with your screenshot)
-          </figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section id="about">
-      <h2>About</h2>
-      <p class="case">
-        I’m a data analyst focused on practical business impact for sales & insurance operations. I enjoy shaping raw
-        data into KPI dashboards, automating repeat reporting, and translating insights for non‑technical stakeholders.
-      </p>
-      <div class="actions">
-        <a class="btn" href="sandbox:/mnt/data/Dakota_Whitis_Data_Analyst_Resume.pdf" target="_blank"
-          rel="noopener">Download Resume (PDF)</a>
-        <a class="btn" href="mailto:dakota@whitis.me">Email Me</a>
-        <a class="btn" href="http://whitis.me/linkedin" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
-    </section>
 
     <footer class="footer">
       <small>© <span id="y"></span> Dakota Whitis. Built with plain HTML/CSS. No frameworks.</small>
