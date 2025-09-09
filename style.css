@@ -160,7 +160,8 @@
       .thumb {
         aspect-ratio: 16/9;
         background: #0e1217 url('') center/cover no-repeat;
-        border-bottom: 1px solid #1a2029 min-height: 200px
+        border-bottom: 1px solid #1a2029;
+        min-height: 200px
       }
 
       .pad {
@@ -179,7 +180,6 @@
         color: #bcd0e2;
         background: #0f1620;
         border: 1px solid #1d2734;
-        : width:;
         padding: 6px 10px;
         border-radius: 999px
       }
